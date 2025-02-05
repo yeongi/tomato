@@ -1,0 +1,19 @@
+<div id="progress"></div>
+
+<script>
+  let i = 0;
+
+  function count() {
+    // 무거운 작업을 쪼갠 후 이를 수행
+    do {
+      i++;
+      progress.innerHTML = i;
+    } while (i % 1e3 != 0);
+
+    if (i < 10000) {
+      queueMicrotask(count);
+    }
+  }
+
+  count();
+</script>
