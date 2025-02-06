@@ -1,2 +1,2 @@
 # tomato
-tomato module
+프론트엔드관련 지식을 학습하는 레포지토리입니다.
